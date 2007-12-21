@@ -12,6 +12,7 @@ Provides: 	guavac
 Obsoletes: 	guavac
 URL: 		http://ibm.com/developerworks/opensource/jikes/
 Source0: 	http://oss.software.ibm.com/pub/jikes/%{version}/%{name}-cvs.tar.bz2
+BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 The IBM Jikes compiler translates Java source files to bytecode. It
