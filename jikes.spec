@@ -1,6 +1,6 @@
 %define name	jikes
 %define version 1.23
-%define release 0.20050308.1
+%define release 0.20050308.2
 
 Summary: 	Java source to bytecode compiler
 Name: 		%{name}
