@@ -1,7 +1,7 @@
 Summary:	Java source to bytecode compiler
 Name:		jikes
 Version:	1.23
-Release:	0.20050308.9
+Release:	0.20050308.10
 License:	IBM Public License
 Group:		Development/Java
 Url:		http://ibm.com/developerworks/opensource/jikes/
