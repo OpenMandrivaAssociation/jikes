@@ -1,28 +1,27 @@
 Summary:	Java source to bytecode compiler
 Name:		jikes
 Version:	1.23
-Release:	0.20050308.13
+Release:	0.20050308.14
 License:	IBM Public License
 Group:		Development/Java
-Url:		http://ibm.com/developerworks/opensource/jikes/
-Source0:	http://oss.software.ibm.com/pub/jikes/%{version}/%{name}-cvs.tar.bz2
-%rename		guavac
+Url:		http://sourceforge.net/projects/jikes
+Source0:	%{name}-cvs.tar.bz2
 
 %description
-The IBM Jikes compiler translates Java source files to bytecode. It
-also supports incremental compilation and automatic makefile generation,
-and is maintained by the Jikes Project:
-  http://ibm.com/developerworks/opensource
-  
+The Jikes compiler translates Java source files to bytecode.
+
+While Jikes is obsolete and unmaintained upstream since 2005,
+it is still needed to bootstrap modern versions of Java.
+
 %prep
-%setup -qn %{name}
+%autosetup -n %{name}
 
 %build
-%configure2_5x --enable-source15
-%make
+%configure --enable-source15
+%make_build
 
 %install
-%makeinstall
+%make_install
 rm -rf %{buildroot}%{_datadir}/doc
 
 
@@ -32,4 +31,3 @@ rm -rf %{buildroot}%{_datadir}/doc
 %doc %{_mandir}/man1/jikes.1*
 %{_bindir}/jikes
 %{_includedir}/jikesapi.h
-
