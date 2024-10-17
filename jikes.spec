@@ -4,7 +4,7 @@ Version:	1.23
 Release:	0.20050308.15
 License:	IBM Public License
 Group:		Development/Java
-Url:		http://sourceforge.net/projects/jikes
+Url:		https://sourceforge.net/projects/jikes
 Source0:	%{name}-cvs.tar.bz2
 
 %description
