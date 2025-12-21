@@ -7,6 +7,11 @@ Group:		Development/Java
 Url:		https://sourceforge.net/projects/jikes
 Source0:	%{name}-cvs.tar.bz2
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 The Jikes compiler translates Java source files to bytecode.
 
